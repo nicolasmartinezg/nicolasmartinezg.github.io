@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:  white;
+}
+#primero{
+    
+    
+    padding-left: 5px;
+    padding-top: 40px;
+    padding-right: 5px;
+    padding-bottom: 150px;
+    
+    background-color: black;
+  
+   
+   color: white;
+}
+
+
+
+#menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    float: right;
+}
+#menu li{
+    float: right;
+    font-size: 40px;
+}
+#menu li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    padding-left: 40px;
+
+}
+#menu li a:hover{
+    color: red;
+}
+
+
+.primero{
+    background-color:white;
+    padding: 1px;
+   
+}
+
+.segundo{
+
+    background-color: #E9E7E7;
+    padding: 5px;
+
+}
+
+
+
+.contenedor{
+    width: 100%;
+   
+    padding: 5px;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-right: 20px;
+    max-width: auto;
+    background-color: #E9E7E7;
+   margin: auto;
+    
+    
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4) ;
+}
+.sub-titulo{
+    font-size: 40px;
+    margin-top:30px;
+}
+
+.contenedor img{
+    width: 550px;
+   
+    float: left;
+   margin: 20px;
+}
+
+.contenedor p{
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 40px;
+    max-width: auto;
+}
+.conocimientos{
+    columns: 2;
+    padding-left: 20px;
+    padding-top: 2px;
+    font-size: 20px;
+  }
+.formacion{
+    padding-top: 2px;
+    font-size: 20px; 
+    padding-left: 20px;
+}
+footer{
+    background: #202020;
+    color: white;
+    width: 100%;
+    
+
+}
+
+.encabezado{
+    background: #202020;
+    color: white;
+    width: 100%;
+    padding: 30px;
+   
+
+}
+
+.container-footer{
+    width: 100%;
+    max-width: auto;
+    margin: auto;
+    
+}
+
+.final{
+    display: flex;
+    justify-content: space-between;
+    padding:40px;
+}
+.columna1{
+    max-width: 300px;
+}
+.columna1 h2{
+    font-size: 24px;
+    margin-top: 20px;
+}
+.columna1 p{
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-top:20px;
+}
+
+.columna2{
+    max-width: 800px;
+}
+.columna2 h2{
+    font-size: 24px;
+    margin-top: 20px;
+
+}
+
+.row{
+    display: flex;
+    margin-top: 20px;
+    
+    
+}
+.row label{
+    margin-top: 15px;
+    margin-left: 20px;
+    color: #c7c7c7;
+   
+}
+
+.row img:hover{
+    filter: opacity(.5);
+}
+
+.columna3{
+    max-width: auto;
+}
+.columna3 h2{
+    font-size: 24px;
+  
+    margin-top: 20px;
+    
+}
+
+.row2{
+    display: flex;
+    margin-top: 20px;
+   
+}
+
+.row2 label{
+
+    margin-top: 15px;
+    margin-left: 20px;
+    color: #c7c7c7;
+
+}
+
+.container-footer2{
+    width: 100%;
+    background-color: #101010;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.copyright{
+    color: #c7c7c7;
+}
+
+.informacion{
+    color: #c7c7c7;
+} 
+
+
+
+@media screen and (max-width: 1100px){
+
+
+    .final{
+        flex-wrap: wrap;
+    }
+    .card{
+        flex-wrap: wrap;
+        
+    }
+
+    .column{
+        padding-left: 40px;
+    }
+    #primero{
+        padding-bottom: 250px;
+    }
+    .columna1{
+        max-width: 100%;
+    }
+    .columna2,
+    .columna3{
+        margin-top: 40px;
+    }
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.servicios{
+    padding: 20px;
+
+}
+
+.column{
+
+    
+    padding: 20px;
+    width: 400px;
+    margin: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 12px #aaa;
+
+/**
+    
+    border-radius: 30px;
+**/    
+    
+}
+
+.destacados{
+    padding-left: 10px;
+    font-size: 50px;
+}
+.realizados{
+    padding-left: 10px;
+}
+
+
+.calculadora {
+	background-color: #e2e2e2;
+	width: fit-content;
+	margin: auto;
+	margin-top: 35px
+}
+
+.sr {
+	padding: 0px 18px 18px 18px;
+}
+
+.sr button {
+	width: 100%;
+	background-color: #48c;
+	color: #fff;
+	border: none;
+	font-size: 50px;
+	padding: 0px
+}
+
+.teclas {
+	display: flex;
+}
+
+.pantalla {
+	padding: 18px 18px 0px 18px;
+}
+
+.numeros {
+	padding: 18px 9px 18px 18px;
+}
+.op {
+	padding: 18px 18px 18px 9px
+}
+
+#resultado {
+	background-color: #666;
+	color: #eee;
+	padding: 6px;
+	font-family: monospace;
+	font-size: 20px
+}
+
+.op button {
+	display: block;
+	width: 54px;
+	height: 54px;
+	padding: 9px 15px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+}
+
+.numeros div{
+    text-align: center;
+}
+
+.numeros button {
+	border: 0px;
+	background-color: #fff;
+	transition: all 0.09s
+}
+
+.numeros button:hover {
+	box-shadow: 0px 0px 12px #aaa;
+}
+
+button {
+	margin: 2px 0px;
+	padding: 15px 24px;
+	font-size: 19px;
+}
