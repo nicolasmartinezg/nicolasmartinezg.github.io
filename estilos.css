@@ -14,7 +14,7 @@ body{
     
     width: 100%;
    
-    padding-bottom: 80px;
+    padding-bottom: 10px;
     
     background-color: black;
   
@@ -22,10 +22,7 @@ body{
    color: white;
 }
 
-.inicio{
-    display: flex;
-    justify-content: flex-end;
-}
+
 
 .contenedor{
     width: 100%;
@@ -52,19 +49,23 @@ body{
 
 }
 
-
+.inicio{
+    display: flex;
+    justify-content: space-around;
+}
 
 #menu{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-   
-    float: right;
+    overflow: hidden;  
+    
+  
 }
 #menu li{
-    float: right;
+   
     font-size: 40px;
+    float: left;
 }
 #menu li a{
     display: inline-block;
@@ -103,9 +104,10 @@ body{
 
 .contenedor img{
     width: 30%;
-   
+   border-radius: 20px;
     float: left;
    margin: 20px;
+   margin-top: 45px;
 }
 
 .contenedor p{
@@ -233,68 +235,6 @@ footer{
     color: #c7c7c7;
 } 
 
-
-
-@media screen and (max-width: 1200px){
-    
-
-    .final{
-        flex-wrap: wrap;
-    }
-    .card{
-        flex-wrap: wrap;
-        
-    }
-
-    .column{
-        padding-left: 40px;
-    }
-    #primero{
-        padding-bottom: 250px;
-    }
-    .columna1{
-        max-width: 100%;
-    }
-    .columna2,
-    .columna3{
-        margin-top: 40px;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .inicio {
-
-        
-       flex-direction: column;
-       
-        
-    }
-    .column{
-
-        
-        overflow-y: auto
-        
-    }
-    .card{
-        flex-direction: column;
-        width: 100%;
-       
-        
-    }
-
-    .sub-titulo{
-        text-align: center;
-    }
-    .contenedor img{
-        float: none;
-        width: 50%;
-        display: block;
-        margin: auto;
-    }
-}
-
-
-
 .card{
     display: flex;
     justify-content: space-around;
@@ -310,9 +250,9 @@ footer{
 
     
     padding: 20px;
-    width:30%;
-    height: 15%;
     
+   width:25% ;
+    height: 50%;
     margin: 20px;
     border: 1px solid black;
     box-shadow: 0px 0px 12px #aaa;
@@ -405,3 +345,103 @@ button {
 	padding: 15px 24px;
 	font-size: 19px;
 }
+
+
+.logo{
+    width:50%;
+    display: block;
+    margin: auto;
+}
+
+.subtitulo1{
+    margin-left: 30px;
+}
+
+.conocimientos{
+    margin-left: 30px;
+}
+
+
+
+@media screen and (max-width: 1200px){
+    
+
+    .final{
+        flex-wrap: wrap;
+    }
+    .card{
+        flex-wrap: wrap;
+        
+    }
+
+   
+   
+    .columna1{
+        max-width: 100%;
+    }
+    .columna2,
+    .columna3{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 600px){
+   
+
+
+    .logo{
+        width: 100% ;
+        }
+    .column{
+        width: 70%;
+        padding: 40px;
+        margin: 40px;
+    }
+    
+
+
+    #menu li{
+   
+        font-size: 40px;
+       
+    }
+    #menu li a{
+        display: block;
+        justify-content: center;
+        margin-left: 30px;
+        
+    }
+   
+    .card{
+        flex-direction: column;
+        width: 100%;
+       
+        
+    }
+
+    .sub-titulo{
+        text-align: center;
+    }
+    .contenedor img{
+        float: none;
+        width: 50%;
+        display: block;
+        margin: auto;
+        padding:10px;
+        max-width: 812px;
+    }
+    .subtitulo1{
+        text-align: center;
+    }
+    .conocimientos{
+        padding: 50px;
+    }
+    .texto{
+        padding: 10px;
+    }
+
+    
+}
+
+
+
